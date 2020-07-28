@@ -1,0 +1,257 @@
+<html>
+	<head>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+
+	<link
+    rel="stylesheet"
+    href="prism-atom-dark.css"
+    type="text/css"
+    media="screen"
+  	/>
+
+  	<script type="text/javascript" src="prism.js"></script>
+  	<script type="text/javascript" src="prism.ruby.js"></script>
+
+  	<title>Jacques Wooldridge</title>
+  	<meta name="description" content="Jacques Wooldridge is a Cobol Developer desiring to transition into Web Development. He is proficient in Full Stack Development, Javascript, Ruby and Ruby on Rails.">
+	</head>
+
+	<body>
+		<div class="about-container"> 
+			<ul>
+    			<li><a href="#" class="nav-link">About</a></li>
+  				<li><a href="#code-samples" class="nav-link">CODE SAMPLES</a></li>
+  				<li><a href="#web-apps" class="nav-link">WEB APPS</a></li>
+  				<li><a href="#skills-and-tools" class="nav-link">SKILLS &amp; TOOLS</a></li>
+  				<li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
+  			</ul>
+    		<div class="about">
+      			<img src="me_photo.jpg" class="me_photo" />
+
+      			<h1>Jacques Wooldridge</h1>
+
+
+      			<h2>COBOL MAINFRAME DEVELOPER</h2>
+
+      			<hr class="grey"/>
+      			<p class="bio">
+        		I am a Cobol Developer desiring to transition into Web Development. I am proficient in Full Stack Development, Javascript, Ruby and Ruby on Rails. In a previous life, I worked on the Hogan banking suite of products for several international banks, in the USA and South Africa.	
+      			</p>
+    		</div>
+		</div>
+		<h3 id="code-samples">Code Snippets</h3>
+		<hr class="yellow">
+
+		<div class="box">
+  			  <h4>Temperature Conversion</h4>
+  					<p>
+    				This Ruby program will prompt the user for a temperature
+    				in degrees Celsius and let the user know what the
+    				corresponding temperature is in Fahrenheit.
+  					</p>
+		</div>
+
+		<div class="box">
+			<pre><code class="language-ruby">
+def temp_conversion(val1)  
+    val2 = (val1.to_f * 9 / 5) + 32     
+    #(0&deg;C &times; 9/5) + 32 = 32&deg;F - formula for temp conversion  
+    response_cm = &quot;The temperature is #{val2} degrees Fahrenheit&quot;  
+    return response_cm 
+end
+
+puts &quot;Please enter degrees in Celsius: &quot;   
+val1 = gets.chomp 
+
+puts temp_conversion(val1)</code></pre>        
+		</div>
+		<br class="clear" />
+		<div class="box">
+			<pre><code class="language-ruby">
+def instance(val1)  
+    right_most_val = val1 % 10      
+    if val1 == 11 || val1 == 12 || val1 == 13        
+        return &quot;#{val1}th&quot; 
+    end
+    if right_most_val == 1    
+        return &quot;#{val1}st&quot; 
+    elsif right_most_val == 2 
+        return &quot;#{val1}nd&quot; 
+    elsif right_most_val == 3             
+        return &quot;#{val1}rd&quot;          
+    else    
+        return &quot;#{val1}th&quot;     
+    end     
+end
+
+puts &quot;Enter a number&quot;       
+val1 = gets.chomp.to_i           
+
+puts instance(val1)</code></pre>          
+		</div>
+
+		<div class="box">
+  			  <h4>Ordinal Challenge</h4>
+  					<p>
+    				This Ruby program will convert a plain number
+    				to the ordinal of the number. So for example,
+    				if the user enters 2, it will display 2nd, if
+    				the user enters 3, it will display 3rd, etc.
+  					</p>
+		</div>
+
+		<br class="clear" />
+		<div class="box">
+  			  <h4>Foobar</h4>
+  					<p>
+    				This Ruby program is an adaptation of a classic technical
+    				interview problem which displays sequences
+    				of the Foobar pattern.
+  					</p>
+		</div>
+
+		<div class="box">
+			<pre><code class="language-ruby">    
+puts &quot;How many items do you want to see?&quot;   
+val1 = gets.chomp.to_i    
+    
+list1 = []    
+(1..val1).each do |number|    
+    if number % 3 == 0 &amp;&amp; number % 5 == 0     
+       list1 &lt;&lt; &quot;foobar&quot; 
+    elsif number % 3 == 0       
+       list1 &lt;&lt; &quot;foo&quot;   
+    elsif number % 5 == 0       
+       list1 &lt;&lt; &quot;bar&quot;   
+    else
+       list1 &lt;&lt; number        
+    end  
+end
+
+puts &quot;#{list1}&quot;</code></pre>                   
+		</div>
+
+		<br class="clear" />
+
+		<h3 id="web-apps">Web Apps</h3>
+		<hr class="yellow" />
+
+		<div class="box">
+      		<h4>
+            <a title="Quote Generator">Quote Generator</a>
+          </h4>
+      		<img src="splurty.png" class="full-width" />
+      			<p>
+              <a>A database-powered quote generator with a mobile-first design, using the Ruby on Rails framework, HTML, and CSS. Uses Git and GitHub for version control, and launched on Heroku.</a>
+              <br /> 
+              <a href="https://splurty-jacques-wooldridge.herokuapp.com/" >GitHub Link to Deployed Project.</a>
+            </p>
+    	</div>
+
+    	<div class="box">
+      		<h4>
+            <a title="Yelp Clone">Yelp Clone</a>
+          </h4>
+      		<img src="nomster.png" class="full-width" />
+      			<p>
+          		<a>A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication.</a>
+              <br /> 
+              <a href="https://nomster-jacques-wooldridge.herokuapp.com/" >GitHub Link to Deployed Project.</a>
+      			</p>
+    	</div>
+    	<br class="clear" />
+
+    	<div class="box">
+      		<h4>
+            <a title="Two-Sided Market Place">Two-Sided Market Place</a>
+          </h4>
+      		<img src="flixter.png" class="full-width" />
+      			<p>
+        		  <a>A two-sided, video-streaming marketplace platform that features credit card payment capabilities, user role management, complex user interfaces, and advanced database relationships.</a>
+              <br /> 
+              <a href="https://flixter-jacques-wooldridge.herokuapp.com/" >GitHub Link to Deployed Project.</a>
+      			</p>
+    	</div>
+
+    	<div class="box">
+      		<h4>
+            <a title="Test Driven Development">Test Driven Development</a>
+          </h4>
+      		<img src="grammable.png" class="full-width" />
+      			<p>
+        		<a>An Instagram clone that was built using industry-standard, test-driven development following numerous red/green/refactor cycles.</a>
+            <br /> 
+            <a href="https://grammable-jacques-wooldridge.herokuapp.com/" >GitHub Link to Deployed Project.</a>
+      			</p>
+    	</div>
+    	<br class="clear" />
+    	
+    	<div class="box">
+      		<h4>
+            <a title="Single Page Todo Application">Single Page Todo Application</a>
+          </h4>
+      		<img src="todoster.png" class="full-width" />
+      			<p>
+        		<a>This single-page to-do application features a fluid user interface that by using JavaScript allows users to rapidly add dynamic content.</a>
+            <br /> 
+            <a href="https://todoster-jacques-wooldridge.herokuapp.com/" >GitHub Link to Deployed Project.</a>
+      			</p>
+    	</div>
+    	<div class="box">
+      		<h4>
+            <a title="Agile Team Project">Agile Team Project</a>
+          </h4>
+      		<img src="chess.png" class="full-width" />
+      			<p>
+        		<a>Worked on an Agile software development team building a chess application. Under the guidance of a senior software engineer, we had weekly Agile team meetings for code reviews, sprint planning, and feature assignments.</a>
+            <br /> 
+            <a href="https://movingonup-chess.herokuapp.com/users/sign_in" >GitHub Link to Deployed Project.</a>
+      			</p>
+    	</div>
+    <br class="clear" />
+    <h3 id="skills-and-tools">Skills &amp; Tools</h3>
+    <hr class="yellow" />
+    <p>
+      Jacques has developed proficiency and expertise
+      in the following programming languages and
+      comfort with the following tools.
+    </p>
+    <div class="icons">
+    	<img src="github.png" class="icon" />
+      <img src="rubocop.png" class="icon" />
+      <img src="trello.png" class="icon" />
+      <img src="slack.png" class="icon" />
+      <img src="codeship.png" class="icon" />
+
+    	<br class="clear" />
+    	<img src="skills.png" class="icon"/>
+    </div>
+
+    <div class="contact-me" id="hire-me">
+    	<h3 class="contact-headline">Contact</h3>
+    	<hr class="yellow" />
+    		<p class="contact-info">
+        	Currently entertaining new opportunities as a Full Stack Web Developer. 
+        	Please get in touch via email or LinkedIn:
+      	</p>
+
+      	<p>
+        	<a href="mailto:jacques.wooldridge@gmail.com" class="contact-link">
+         		jacques.wooldridge@gmail.com
+        	</a>
+        </p>
+
+        <p>
+          <a href="http://www.linkedin.com/in/jacques-wooldridge-0b754410" class="contact-link">Visit my LinkedIn</a>
+        </p>
+
+        <p>
+          <a href="http://github.com/j1wooldridge" class="contact-link">Visit my GitHuB page</a>
+        </p>
+            
+    </div>
+	</body>
+
+</html>
